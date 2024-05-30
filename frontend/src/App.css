@@ -1,0 +1,95 @@
+.body-signup {
+  background-color: #F0F0F0;
+  height: 100vh;
+}
+
+.body-dashboard{
+  background-color: #F1EFEF;
+  height: 100%;
+
+}
+
+/* .body-home{
+    background-image: url("https://wallpapercave.com/wp/wp7890704.png");
+    background-size: cover;
+    height: 100%;
+} */
+
+.nav-item .active {
+  font-weight: bolder;
+  border-bottom: 2px solid blueviolet;
+  /* color: blueviolet !important; */
+}
+
+.rotate1 {
+  transform: rotate(6deg);
+}
+
+.rotate2 {
+  transform: rotate(-6deg);
+}
+
+.gradient-custom {
+  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+
+.carousel-indicators {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.button {
+  background-color: hsla(217, 81%, 68%, 0.644);
+  color: white;
+}
+
+.button:hover {
+  background-color: hsl(218, 74%, 60%);
+  color: white;
+}
+
+.background-linear-gradient {
+  background: rgb(81, 74, 196);
+  background: linear-gradient(120deg, rgba(81, 74, 196, 1) 24%, rgba(21, 18, 153, 1) 42%, rgba(21, 18, 153, 1) 60%, rgba(81, 74, 196, 1) 84%);
+}
+
+.button-search {
+  border: 1px solid rgb(81, 74, 196);
+  ;
+}
+
+.button-search:hover {
+  background-color: rgba(81, 74, 196, 1);
+  color: white;
+}
+
+.train {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.audio-train {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding-top: 10rem;
+}
+
+.Montserrat {
+  font-family: Montserrat;
+}
+
+.manage-model {
+  background: rgb(152, 74, 196);
+  background: linear-gradient(90deg, rgba(152, 74, 196, 1) 11%, rgba(81, 18, 153, 1) 39%, rgba(117, 18, 153, 1) 56%, rgba(91, 25, 155, 1) 69%, rgba(152, 74, 196, 1) 88%);
+  height: 8rem;
+  padding: 2rem;
+}
