@@ -12,6 +12,7 @@ const CLASS_NAMES = ['new', 'old'];
 
 const ImageClassifier = () => {
   const [trainedModel, setTrainedModel] = useState(null);
+  const [predictionResult, setPredictionResult] = useState('');
   const { token } = JSON.parse(sessionStorage.getItem('user'));
   const camRef = useRef(null);
   const [imageClasses, setImageClasses] = useState([
@@ -222,6 +223,7 @@ const ImageClassifier = () => {
 
         console.log('Prediction: ' + imageClasses.map(imgClass => imgClass.name)[highestIndex] + ' with ' + Math.floor(predictionArray[highestIndex] * 100) + '% confidence');
         // STATUS.innerText = ;
+        setPredictionResult(imageClasses.map(imgClass => imgClass.name)[highestIndex] + ' with ' + Math.floor(predictionArray[highestIndex] * 100) + '% confidence');
       });
 
       window.requestAnimationFrame(predictLoop);
@@ -342,7 +344,7 @@ const ImageClassifier = () => {
                     </div>
                   </div>
                   <hr style={{ color: "#A9A9A9" }} />
-                  <p className='text-muted mt-2 p-1 fw-medium'>You must train a model on the left before you can preview it here.</p>
+                  <p className='text-muted mt-2 p-1 fw-medium'>{predictionResult}</p>
                 </div>
               </div>
             </div>
